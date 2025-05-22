@@ -1,0 +1,57 @@
+2025-05-19 18:07:20,457 - ThorTrading - INFO - Starting Thor Trading System in monitor mode
+2025-05-19 18:07:20,458 - ThorTrading - INFO - Initializing database connector
+2025-05-19 18:07:20,524 - connectors.postgres_connector - INFO - Initialized connection pool to trading_db on localhost
+2025-05-19 18:07:20,524 - ThorTrading - INFO - Initializing feature generator
+2025-05-19 20:02:19,646 - ThorTrading - INFO - Starting Thor Trading System in monitor mode
+2025-05-19 20:02:19,646 - ThorTrading - INFO - Initializing database connector
+2025-05-19 20:02:19,697 - connectors.postgres_connector - INFO - Initialized connection pool to trading_db on localhost
+2025-05-19 20:02:19,698 - ThorTrading - INFO - Initializing feature generator
+2025-05-19 20:02:19,699 - ThorTrading - INFO - Initializing IBKR connector
+2025-05-19 20:02:19,699 - ThorTrading - INFO - Initializing execution engine
+2025-05-19 20:02:19,700 - ThorTrading - INFO - Starting trading system in monitor mode
+2025-05-19 20:02:19,702 - TradingSystem - INFO - Scheduled daily trading cycle at 10:00
+2025-05-19 20:02:19,702 - TradingSystem - INFO - Scheduled daily trading cycle at 14:00
+2025-05-19 20:02:19,703 - TradingSystem - INFO - Scheduled position updates every 30 minutes
+2025-05-19 20:02:19,704 - ThorTrading - INFO - Running in monitor mode (no trading)
+2025-05-19 20:02:19,705 - TradingSystem - INFO - Starting trading system
+2025-05-19 20:02:19,706 - TradingSystem - INFO - Starting trading cycle
+2025-05-19 20:02:19,707 - TradingSystem - ERROR - Error in trading cycle: 'IBKRConnector' object has no attribute 'is_market_open'
+2025-05-19 20:02:19,709 - TradingSystem - ERROR - Traceback (most recent call last):
+  File "E:\Projects\thor_trading\pipeline\trading_system.py", line 395, in run_trading_cycle
+    if not self.ibkr.is_market_open('CL-HO-SPREAD'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'IBKRConnector' object has no attribute 'is_market_open'
+
+2025-05-19 20:03:43,067 - TradingSystem - INFO - Trading system stopped by user
+2025-05-19 20:03:43,068 - ThorTrading - INFO - Thor Trading System shutting down
+2025-05-19 20:03:54,730 - ThorTrading - INFO - Starting Thor Trading System in monitor mode
+2025-05-19 20:03:54,730 - ThorTrading - INFO - Initializing database connector
+2025-05-19 20:03:54,781 - connectors.postgres_connector - INFO - Initialized connection pool to trading_db on localhost
+2025-05-19 20:03:54,781 - ThorTrading - INFO - Initializing feature generator
+2025-05-19 20:03:54,782 - ThorTrading - INFO - Initializing IBKR connector
+2025-05-19 20:03:54,783 - ThorTrading - INFO - Initializing execution engine
+2025-05-19 20:03:54,783 - ThorTrading - INFO - Starting trading system in monitor mode
+2025-05-19 20:03:54,785 - TradingSystem - INFO - Scheduled daily trading cycle at 10:00
+2025-05-19 20:03:54,786 - TradingSystem - INFO - Scheduled daily trading cycle at 14:00
+2025-05-19 20:03:54,786 - TradingSystem - INFO - Scheduled position updates every 30 minutes
+2025-05-19 20:03:54,787 - ThorTrading - INFO - Running in monitor mode (no trading)
+2025-05-19 20:03:54,787 - TradingSystem - INFO - Starting trading system
+2025-05-19 20:03:54,788 - TradingSystem - INFO - Starting trading cycle
+2025-05-19 20:03:54,789 - connectors.ibkr_connector - WARNING - Not connected to IBKR, attempting to reconnect...
+2025-05-19 20:03:54,790 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-05-19 20:03:56,838 - ib_insync.client - INFO - Disconnecting
+2025-05-19 20:03:56,838 - ib_insync.client - ERROR - API connection failed: ConnectionRefusedError(22, 'The remote computer refused the network connection', None, 1225, None)
+2025-05-19 20:03:56,839 - ib_insync.client - ERROR - Make sure API port on TWS/IBG is open
+2025-05-19 20:03:56,840 - connectors.ibkr_connector - ERROR - Failed to connect to IBKR: [WinError 1225] The remote computer refused the network connection
+2025-05-19 20:03:56,840 - TradingSystem - INFO - Market is closed, skipping trading cycle
+2025-05-19 20:33:55,771 - TradingSystem - INFO - Updating positions
+2025-05-19 21:03:56,695 - TradingSystem - INFO - Updating positions
+2025-05-19 21:33:57,609 - TradingSystem - INFO - Updating positions
+2025-05-19 22:03:58,520 - TradingSystem - INFO - Updating positions
+2025-05-19 22:33:59,445 - TradingSystem - INFO - Updating positions
+2025-05-19 23:04:00,320 - TradingSystem - INFO - Updating positions
+2025-05-19 23:34:01,229 - TradingSystem - INFO - Updating positions
+2025-05-20 00:04:02,139 - TradingSystem - INFO - Updating positions
+2025-05-20 00:34:03,067 - TradingSystem - INFO - Updating positions
+2025-05-20 01:02:44,756 - TradingSystem - INFO - Trading system stopped by user
+2025-05-20 01:02:44,756 - ThorTrading - INFO - Thor Trading System shutting down
